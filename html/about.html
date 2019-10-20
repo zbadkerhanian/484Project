@@ -1,4 +1,4 @@
-<html>
+<html class="not">
 
     <head>
         <meta charset="utf-8">
@@ -8,9 +8,26 @@
 
         <link href="../css/global.css" type="text/css" rel="stylesheet">
         <link href="../css/page1.css" type="text/css" rel="stylesheet">
+
+        <style type="text/css">
+            /* *:not(.not):hover {
+                background-color: khaki;
+            } */
+
+            :not(.not):hover {
+                background-color: khaki;
+            }
+
+            
+            details p {
+                margin: 2em;
+                width: 30%; 
+                height: 150px; 
+            }
+        </style>
     </head>
 
-    <body>
+    <body class="not">
         <header>
             <div style="float: left;">
                 <img src="../images/dummy-logo.jpg" alt="profile-photo" style="position: absolute; max-height: 100; margin-right: 5px; z-index: 1;">
@@ -40,11 +57,41 @@
 
         </header>
 
-        <h2>About</h2>
+        <article>
 
-        <p>
-            <br>This is the body
-        </p>
+            <details>
+                <summary>One short sentence about our company/website</summary>
+                <p style="padding: 2em; ;overflow: scroll;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p style="overflow: hidden;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <img src="../images/map.jpg" alt="map" style="max-width: 200px;">
+            </details>
+
+
+            <section>
+                <h2>Contact Us</h2>
+                <p>584 Devon Rd. Clearwater, FL 33756 <br>
+                    <tel>(555)555-5555</tel>
+                    <a href="mailto:zareh@zareh.com"><address>zareh@zareh.com</address></a>
+                </p>
+            </section>
+        </article>
 
 
         <footer>

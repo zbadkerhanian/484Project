@@ -10,10 +10,65 @@
         <link href="../css/page1.css" type="text/css" rel="stylesheet">
 
         <style type="text/css">
+            @media only screen and (min-width: 1025px) {
+
+                article.privacyArt {
+                    column-count: 4;
+                    column-gap: 25px;
+                    background-color: skyblue;
+                }
+            }
+
+            @media only screen and (min-width: 481px) and (max-width: 1024px) {
+                article.privacyArt {
+                    column-count: 3;
+                    column-gap: 30px;
+                    background-color: skyblue;
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                article.privacyArt {
+                    column-count: 2;
+                    column-gap: 20px;
+                    background-color: silver;
+                }
+            }
+
+            article.privacyArt {
+                text-align: justify;
+                background-image: url("../images/articleBackground.jpg");
+                background-position-x: left;
+                background-position-y: bottom;
+
+                background-repeat: no-repeat;
+                background-size: 200px;
+
+            }
+
+            @media only screen and (min-width: 700px) and (max-width: 900px) {
+                article.privacyArt {
+                    color: purple;
+                    text-align: left;
+                }
+            }
+
             table, th, td {
                 border: 1px solid black;
                 border-collapse: collapse;
             }
+
+            aside {
+                float: right;
+                width: 20%;
+                background-color: greenyellow;
+                
+                /* display: flex;    
+                flex-flow: column;
+                height: 100%; */
+                
+            
+            }
+            
         </style>
     </head>
 
@@ -82,25 +137,34 @@
                 </tfoot>
             </table>
 
+            <div>
+                <aside>
+                    <p>Contact Us</p>
+                    <p>address</p>
+                    <p>phone</p>
+                    <p>email</p>
+                </aside>
 
-            <article class="privacyArt">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </article>
+                <article class="privacyArt">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </article>
+            </div>
+            
         </section>
 
 
