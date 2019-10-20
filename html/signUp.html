@@ -1,0 +1,164 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <title>Sign up</title>
+
+        <link href="../css/global.css" type="text/css" rel="stylesheet">
+        <link href="../css/page1.css" type="text/css" rel="stylesheet">
+
+        <style type="text/css">
+            body {
+                background-image: url("../images/pexels-photo-949587.jpeg");
+                background-repeat: repeat-y;
+            }
+            span.specialText {
+                font-family: "Comic Sans", sans-serif;
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div style="float: left;">
+                <img src="../images/dummy-logo.jpg" alt="profile-photo" style="position: absolute; max-height: 100; margin-right: 5px; z-index: 1;">
+                <img src="../images/transparent_at.png" alt="at-sign" style="position: relative; max-height: 100; margin-right: 5px; z-index: 2;">
+            </div>
+            <form style="float: right; margin-top: 5px;" action="http://www.google.com/search" method="GET">
+                <label for="search">Search <input type="search" id="search" name="search"></label>
+                <select name="searchType">
+                    <option value="google">Search the web</option>
+                    <option value="site">Search within the site</option>
+                </select>
+                <button type="submit" name="button">Search</button>
+            </form>
+            <p style="float: left; padding-top: 25;">
+                Zareh Inc.<br>Zareh Badkerhanian, CEO<br>zareh@zareh.com
+            </p>
+  
+            <p style="clear: both;">Welcome to our website!</p>
+
+            <nav>Menu
+                <ul>
+                    <li><a class="navlink" href="signUp.html">Sign up</a></li>
+                    <li><a class="navlink" href="privacyPolicy.html">Privacy Agreement</a></li>
+                    <li><a class="navlink" href="about.html">About us</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            
+            <h2>Sign up today to receive updates</h2>
+
+            <div align="center" style="background-color: white; width: 50%; border: 30px groove silver ;">
+                <form action="http://www.deitel.com" method="POST">
+                    <p>
+                        <label for="firstName">First Name <input type="text" id="firstName" placeholder="John" autofocus autocomplete="on"></label>
+                    </p>
+                    <p>    
+                        <label for="lastName">Last Name <input type="text" id="lastName" placeholder="Smith" autocomplete="on"></label>
+                    </p>
+                    <p>    
+                        <label for="email">Email <input type="email" id="email" placeholder="example@example.com" autocomplete="off"></label>
+                    </p>
+                    <p>    
+                        <label for="password">Password <input type="password" id="password" autocomplete="on"></label>
+                    </p>
+                    <p>    
+                        <label for="reenterPassword">Re-enter Password <input type="password" id="reenterPassword" autocomplete="on"></label>
+                    </p>
+                    <p>    
+                        <label for="birthday">Birthday <input type="date" id="birthday" value="1998-01-01" autocomplete="on"></label>
+                    </p>
+                    <p>
+                        <label for="major">Major
+                            <input list="majors" id="major">
+                            <datalist id="majors">
+                                <option value="Civil Engineering"></option>
+                                <option value="Computer Engineering"></option>
+                                <option value="Computer Information Technology"></option>
+                                <option value="Computer Science"></option>
+                                <option value="Electrical Engineering"></option>
+                                <option value="Engineering Management"></option>
+                                <option value="Manufacturing Systems Engineering"></option>
+                                <option value="Mechanical Engineering"></option>
+                            </datalist>
+                        </label>
+                    </p>
+                    <p>    
+                        <label for="favColor">Your <span class="specialText">Favorite Color</span><input type="color" id="favColor"></label>
+                    </p>
+                    <p>    
+                        <label for="yrsInCollege">Number of years in college 
+                            <input type="number" id="yrsInCollege" min="1" max="4">
+                            
+                        </label>
+                    </p>
+                    <p>    
+                        <label for="phoneNumber">Phone Number <input type="tel" id="phoneNumber" pattern="/d{3}-/d{3}-/d{4}" autocomplete="off"></label>
+                    </p>
+                    <p>    
+                        <label for="url">Link to your homepage <input type="url" id="url" formnovalidate autocomplete="off"></label>
+                    </p>
+                    <p>    
+                        <label for="yrsOfExperience">Years of Experience 
+                            <select name="" id="yrsOfExperience">
+                                <option value="0-5">0-5</option>
+                                <option value="5-10">5-10</option>
+                                <option value="10-15">10-15</option>
+                                <option value="15-20">15-20</option>
+                                <option value="20+">20+</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>    
+                        <label for="skillRange">Skill level in <...> 0<input type="range" id="skillRange" min="0" max="10">10</label>
+                    </p>
+                    <p>    
+                        <label for="options">Contact Preference  <br>
+                            <input type="checkbox">I would like to receive emails about new products and offers <br>
+                            <input type="checkbox">I would like to receive emails about my account and membership <br>
+                            <input type="checkbox">I would like to receive mail <br>
+                            
+                        </label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Sign up</button>
+                        <button type="reset">Reset</button>
+                    </p>
+
+                </form>
+            </div>
+        </main>
+
+
+        <footer>
+            <div style="float: left;">
+                <img src="../images/dummy-logo.jpg" alt="profile-photo" style="position: absolute; max-height: 100; margin-right: 5px; z-index: 1;">
+                <img src="../images/transparent_at.png" alt="at-sign" style="position: relative; max-height: 100; margin-right: 5px; z-index: 2;">
+            </div>
+            <p style="float: left; padding-top: 25;">
+                Zareh Inc.<br>Zareh Badkerhanian, CEO<br>zareh@zareh.com
+            </p>
+
+            <div style="float: right;">
+                <address>Contact us at: <a href="mailto:contact@zareh.com">contact@zareh.com</a></address>
+                <tel>(555)555-5555</tel>
+            </div>
+
+            <p style="clear: left;">
+                <a href="page2.html">&copy; Zareh INC. ALL Rights Reserved</a>
+            </p>
+        </footer>
+
+
+        
+    </body>
+
+</html>
