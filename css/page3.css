@@ -1,0 +1,58 @@
+@media only screen and (min-width: 1025px) {
+
+  article.privacyArt {
+      column-count: 4;
+      column-gap: 25px;
+      background-color: skyblue;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  article.privacyArt {
+      column-count: 3;
+      column-gap: 30px;
+      background-color: skyblue;
+  }
+}
+@media only screen and (max-width: 480px) {
+  article.privacyArt {
+      column-count: 2;
+      column-gap: 20px;
+      background-color: silver;
+  }
+}
+
+article.privacyArt {
+  text-align: justify;
+  background-image: url("../images/articleBackground.jpg");
+  background-position-x: left;
+  background-position-y: bottom;
+
+  background-repeat: no-repeat;
+  background-size: 200px;
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  article.privacyArt {
+      color: purple;
+      text-align: left;
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+aside {
+  float: right;
+  width: 20%;
+  background-color: greenyellow;
+
+  /* display: flex;
+  flex-flow: column;
+  height: 100%; */
+
+
+}
