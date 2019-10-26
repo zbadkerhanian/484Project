@@ -22,6 +22,7 @@
       background-color: skyblue;
   }
 }
+
 @media only screen and (max-width: 480px) {
   article.privacyArt {
       -webkit-column-count: 2;
@@ -31,6 +32,13 @@
       -moz-column-gap: 20px;
       column-gap: 20px;
       background-color: silver;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  article.privacyArt {
+      color: purple;
+      text-align: left;
   }
 }
 
@@ -44,16 +52,14 @@ article.privacyArt {
   background-size: 200px;
 }
 
-@media only screen and (min-width: 700px) and (max-width: 900px) {
-  article.privacyArt {
-      color: purple;
-      text-align: left;
-  }
-}
-
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+}
+
+tfoot {
+  color: red;
+  text-align: center;
 }
 
 .articleDiv {
